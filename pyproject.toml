@@ -6,10 +6,25 @@ authors = [
     {name = "David Tateyama",email = "dtateyama@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10,<3.14"
 dependencies = [
     "huggingface-hub (>=0.32.0,<0.33.0)",
-    "dotenv (>=0.9.9,<0.10.0)"
+    "python-dotenv (>=1.0.0,<2.0.0)",
+    "smolagents (>=1.16.1,<2.0.0)",
+    "ipywidgets (>=8.1.7,<9.0.0)",
+    "opentelemetry-sdk (>=1.33.1,<2.0.0)",
+    "opentelemetry-exporter-otlp (>=1.33.1,<2.0.0)",
+    "openinference-instrumentation-smolagents (>=0.1.11,<0.2.0)",
+    "duckduckgo-search (>=8.0.2,<9.0.0)",
+    "numpy (>=2.2.6,<3.0.0)",
+    "markdownify (>=0.11.0,<1.0.0)"
+]
+
+[project.optional-dependencies]
+telemetry = [
+    "opentelemetry-sdk",
+    "opentelemetry-exporter-otlp",
+    "openinference-instrumentation-smolagents"
 ]
 
 [tool.poetry]
