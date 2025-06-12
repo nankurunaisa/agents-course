@@ -10,14 +10,17 @@ requires-python = ">=3.10,<3.14"
 dependencies = [
     "huggingface-hub (>=0.32.0,<0.33.0)",
     "python-dotenv (>=1.0.0,<2.0.0)",
-    "smolagents (>=1.16.1,<2.0.0)",
+    "smolagents[litellm] (>=1.18.0,<2.0.0)",
     "ipywidgets (>=8.1.7,<9.0.0)",
     "opentelemetry-sdk (>=1.33.1,<2.0.0)",
     "opentelemetry-exporter-otlp (>=1.33.1,<2.0.0)",
     "openinference-instrumentation-smolagents (>=0.1.11,<0.2.0)",
     "duckduckgo-search (>=8.0.2,<9.0.0)",
     "numpy (>=2.2.6,<3.0.0)",
-    "markdownify (>=0.11.0,<1.0.0)"
+    "markdownify (>=0.11.0,<1.0.0)",
+    "helium (>=5.1.1,<6.0.0)",
+    "selenium (>=4.33.0,<5.0.0)",
+    "pillow (>=10.0.0,<11.0.0)"
 ]
 
 [project.optional-dependencies]
